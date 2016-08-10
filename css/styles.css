@@ -1,0 +1,126 @@
+/* ----------------- GENERAL ----------------- */
+body {
+    font: 82.5% "Trebuchet MS", sans-serif;
+}
+
+.titleText {
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    //color: #f6931f;
+}
+
+.instructionTitle {
+    font-size: 1.2em;
+}
+
+/*Center element*/
+.centeredhorizontal {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: inline-block;
+}
+
+.flex-item-align-center {
+    align-self: center;
+}
+
+.flex-item-align-end {
+    align-self: flex-end;
+}
+
+.link {
+    margin-top: 40px;
+}
+
+/* ----------------- MAIN SCREEN ----------------- */
+.main-content
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8em;
+}
+
+.main-randomcard
+{
+    //background: linear-gradient(rgba(0, 0 ,255, 0.4),  rgba(0,0,255,0.8));
+    background: linear-gradient(rgba(28, 148 ,196, 0.8),  rgba(28, 148, 196, 1));
+    margin-top: 15px;
+    color: white;
+    padding: 15px;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.4);
+    border-radius: 8px;
+    border-color: rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.main-random{
+    font-size: 2.5em;
+    font-weight: 700;
+    word-break: break-all;
+    line-height: 1.4em;
+}
+
+/* links */
+.main-settingslink
+{
+  display: inline-block; /* to make margin work on inline element */
+  margin-top: 20px;
+}
+
+/* ----------------- SETTINGS ----------------- */
+.seetings-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#amountsrb {
+    margin: 3% 0%;
+    align-self: center;
+}
+
+/* Range setting panel */
+.settings-rangepanel
+{
+    /*border: 1px solid gray;
+    border-radius: 5px;
+    margin: 5% 0%;
+    width: 80%;*/
+
+    width: 80%;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.settings-rangelabel
+{
+    color: #5c9ccc;
+    align-self: center;
+    margin-bottom: 10px;
+}
+.settings-rangeslider {
+    display: flex;
+}
+.settings-rangeText
+{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 4px;
+    color: #f6931f;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#slider-range {
+    flex: 1 0;
+    align-self: center;
+}
+.settings-setbutton {
+    align-self: center;
+    margin-top: 30px;
+}
+

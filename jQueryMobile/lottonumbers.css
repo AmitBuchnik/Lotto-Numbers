@@ -1,0 +1,90 @@
+/* ----------------- GENERAL ----------------- */
+body {
+    //font-family: 'Roboto Condensed', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.content-line-height {
+    line-height: 1.8em;
+}
+
+.random-card
+{
+    background: linear-gradient(rgba(51,136,204, 0.6), rgba(51,136,204, 1));
+    margin-top: 15px;
+    color: white;
+    padding: 15px;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.4);
+    border-radius: 8px;
+    border-color: rgba(0,0,0,0.2);
+    display: inline-block;
+    width: inherit;
+}
+
+.random-numbers {
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+.ui-header .ui-title {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.ui-field-contain .ui-controlgroup,
+.ui-field-contain fieldset.ui-controlgroup {
+    text-align: center;
+}
+
+.ui-field-contain .ui-controlgroup-controls {
+    width: auto;
+}
+
+.ui-bar {
+    background: linear-gradient(rgba(246,168,40, 0.8), rgba(246,168,40, 1));
+    border: none;
+
+    //background: url("header.jpg") center;
+    //color: blue;
+}
+
+/* ----------- Galaxy S5 ----------- */
+
+/* Portrait and Landscape */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: portrait) {
+    .random-numbers {
+        font-size: 1.6em;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+/* Landscape */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: landscape) {
+
+}
+
+
+
+
