@@ -31,6 +31,20 @@
                 <p id="randomNumbers" class="random-numbers"></p>
             </div>
         </div>
+        <div data-position-to="window" data-role="popup" id="message" data-overlay-theme="b" data-theme="a"
+             style="min-width:250px; min-height: 100px">
+            <a href="#" data-rel="back"
+               class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <div data-role="header" data-theme="a" class="ui-corner-all ui-shadow">
+                <h1 id="messageTitle"></h1>
+            </div>
+            <div data-role="main" class="ui-content center">
+                <h3 id="messageText" class="ui-title"></h3>
+                <a href="#" id="btnMessageClose"
+                   class="ui-btn ui-corner-all ui-shadow ui-btn-inline"
+                   data-rel="back">Close</a>
+            </div>
+        </div>
     </div>
 
     <div data-role="page" data-dom-cache="true" id="settings">
@@ -55,11 +69,11 @@
                 </fieldset>
             </div>
             <br/>
-            <div data-role="rangeslider">
+            <div data-role="rangeslider" id="slider">
                 <label for="minRange" id="lblRangeMin"><h4>Range</h4></label>
-                <input name="range-1a" id="minRange" min="0" max="49" value="0" type="range" />
+                <input name="range-1a" id="minRange" min="1" max="49" value="1" type="range" data-popup-enabled="true" />
                 <label for="maxRange" id="lblRangeMax"><h4>Range</h4></label>
-                <input name="range-1b" id="maxRange" min="0" max="49" value="49" type="range" />
+                <input name="range-1b" id="maxRange" min="1" max="49" value="49" type="range" data-popup-enabled="true" />
             </div>
             <br/>
             <button data-inline="true" onclick="lotto.setValues()" data-icon="check" data-iconpos="right">Set</button>
