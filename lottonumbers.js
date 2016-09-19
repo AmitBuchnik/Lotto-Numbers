@@ -36,7 +36,7 @@ lotto.generateNumbers = function () {
     lotto.numbersSet.clear();
 
     while (lotto.numbersSet.size < amount) {
-        let num = math.randomInt(min - 1, max + 1);
+        let num = math.randomInt(min, max + 1);
         lotto.numbersSet.add(num);
     }
 
