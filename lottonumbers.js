@@ -28,12 +28,23 @@ $(document).on( "pagecontainerchange", function( event, ui ) {
     }
 });
 
+lotto.showMessage = function (title, text) {
+    $('#messageTitle').html(title);
+    $('#messageText').html(text);
+    $('#message').popup('open', {transition: 'fade'});
+};
+
 lotto.generateNumbers = function () {
     let amount = lotto.getAmountFromLocalStorage();
     let min = lotto.getMinFromLocalStorage();
     let max = lotto.getMaxFromLocalStorage();
 
     lotto.numbersSet.clear();
+
+    if(amount > max) {
+        lotto.showMessage('Error', 'Amount of numbers is larger than max range.');
+        return;
+    }
 
     while (lotto.numbersSet.size < amount) {
         let num = math.randomInt(min, max + 1);

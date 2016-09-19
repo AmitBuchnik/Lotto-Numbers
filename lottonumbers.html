@@ -31,6 +31,20 @@
                 <p id="randomNumbers" class="random-numbers"></p>
             </div>
         </div>
+        <div data-position-to="window" data-role="popup" id="message" data-overlay-theme="b" data-theme="a"
+             style="min-width:250px; min-height: 100px">
+            <a href="#" data-rel="back"
+               class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <div data-role="header" data-theme="a" class="ui-corner-all ui-shadow ui-bar">
+                <h1 id="messageTitle"></h1>
+            </div>
+            <div data-role="main" class="ui-content center">
+                <h3 id="messageText" class="ui-title"></h3>
+                <a href="#" id="btnMessageClose"
+                   class="ui-btn ui-corner-all ui-shadow ui-btn-inline"
+                   data-rel="back">Close</a>
+            </div>
+        </div>
     </div>
 
     <div data-role="page" data-dom-cache="true" id="settings">
